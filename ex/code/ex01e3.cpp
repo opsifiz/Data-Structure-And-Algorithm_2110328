@@ -21,7 +21,13 @@ int32_t main(){
         if(val < a[1]) cout<<"-1\n";
         else if(val >= a[n]) cout<<a[n]<<'\n';
         else{
-            int idx = lower_bound(a,a+n+1,val+1)-a;
+            int l = 1, r = n;
+            while(l<r){
+                int mid = l+(r-l)/2;
+                if(val <= a[mid]) r = mid;
+                else l = mid+1;
+            }
+            int idx = l;
             if(val == a[idx]) cout<<a[idx]<<'\n';
             else cout<<a[idx-1]<<'\n';
         }
