@@ -4,3 +4,7 @@ test/
 *.zip
 *.exe
 list/
+main
+main.o
+# Incomplete
+a64_q4_path_sum*

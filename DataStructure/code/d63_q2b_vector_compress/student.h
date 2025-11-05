@@ -8,7 +8,7 @@ void CP::vector<T>::compress() {
     T *v = this->mData;
     this->mData = new T[this->mCap];
     for(int i=0;i<this->mSize;i++){
-        this->mData[i] = *(v+i);
+        this->mData[i] = v[i];
     }
     delete [] v;
 }
