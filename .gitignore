@@ -6,8 +6,4 @@ test/
 main
 main.o
 # Incomplete
-da66_m2_furthest_distance*
 d59_q3_bst_split*
-a64_q1_permu_before*
-da66_f2_grid_loop*
-d61_q2_imbalance*
