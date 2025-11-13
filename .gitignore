@@ -5,5 +5,3 @@ test/
 *.exe
 main
 main.o
-# Incomplete
-d59_q3_bst_split*
